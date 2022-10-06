@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+.road1{
+    height: 1100px;
+    border-right: 5px solid red;
+    border-left: 5px solid red;
+    width: 550px;
+    background-color: black;
+    margin-left: 350px;
+    margin-top: -10px;
+    position: relative;
+}
+
+.car1{
+    transform: rotate(270deg);
+    margin-right: 270px;
+    margin-top: -700px;
+    animation: car 10s;
+}
+
+
+
+.roadtrack1{
+    position: absolute;
+    width: 10px;
+    margin-top: -240px;
+    margin-left: 620px;
+    height: 700px;
+    background-color: white;
+}
+@keyframes car {
+    0%{
+        margin-top: 100px;
+    }
+    50%{
+        margin-top: -1100px;
+    }
+}
+
+.road2{
+    position: absolute;
+    width: 10px;
+    height: 150px;
+    margin-left: 750px;
+    background-color: white;
+    
+}
+
+.road3{
+    position: absolute;
+    width: 10px;
+    height: 150px;
+    margin-left: 750px;
+    margin-top: 350px;
+    background-color: white;
+    
+}
+</style>
+<body>
+    <div class="road1"></div>
+    <div class="car1"><img src="carrace.png" alt=""></div>
+    <div class="roadtrack1"></div>   
+    <div class="road2"></div>
+    <div class="road3"></div>
+</body>
+</html>
